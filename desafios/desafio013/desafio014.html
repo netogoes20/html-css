@@ -8,14 +8,19 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         table {
             border-collapse: collapse;
-            width: 500px;x
+            width: 500px;
         }
 
         thead {
             background-color: rgb(94, 94, 94);
+            color: white;
+        }
+
+        tr.inverso {
+            background-color: #7e7e7e;
             color: white;
         }
 
@@ -24,31 +29,27 @@
             padding: 5px;
         }
 
-        th.media {
-            background-color: rgb(94, 94, 94);
-            color: white;
+        td.centro {
+            text-align: center;
+        }
+
+        th.esquerda {
             text-align: left;
         }
 
-        td.notas {
-            text-align: center;
-        }
-
-        td.media {
-            background-color: rgb(94, 94, 94);
-            color: white;
-            text-align: center;
+        .realce {
+            font-weight: bolder;
         }
     </style>
 </head>
 <body>
     <table>
-        <thead>
+        <thead class="inverso">
             <tr>
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col">Disciplinas</th>
                 <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2" scope="col">Médias</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
                 <th scope="col">Nota 1</th>
@@ -57,51 +58,50 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3" scope="rowgroup">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
-                <td class="notas">9.0</td>
-                <td class="notas">8.0</td>
-                <td class="notas">8.5</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
                 <td>Física</td>
-                <td class="notas">7.0</td>
-                <td class="notas">7.5</td>
-                <td class="notas">7.25</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
                 <td>Química</td>
-                <td class="notas">6.0</td>
-                <td class="notas">7.5</td>
-                <td class="notas">6.75</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
-            <tr>
-                <th colspan="4" scope="row" class="media">Média de Exatas</th>
-                <td class="media">7.5</td>
-            </tr>
-            <tr>
-                <th rowspan="3" scope="rowgroup">Humanas</th>
                 <td>Biologia</td>
-                <td class="notas">8.0</td>
-                <td class="notas">8.0</td>
-                <td class="notas">8.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+            </tr>
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda">Média de Exatas</th>
+                <td class="centro realce">0.0</td>
             </tr>
             <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
-                <td class="notas">8.5</td>
-                <td class="notas">7.0</td>
-                <td class="notas">7.75</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
             </tr>
             <tr>
                 <td>Geografia</td>
-                <td class="notas">6.0</td>
-                <td class="notas">7.0</td>
-                <td class="notas">6.5</td>
-            </tr>
-            <tr>
-                <th colspan="4" scope="row ," class="media">Média de Humanas</th>
-                <td class="media">7.4</td>
-            </tr>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+                <td class="centro">0.0</td>
+            </tr>   
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda">Média de Humanas</th>
+                <td class="centro realce">0.0</td>
+            </tr> 
         </tbody>
     </table>
 </body>
